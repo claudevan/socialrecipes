@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
+gem 'paperclip', '~> 4.3'
 
 group :development, :test do
   gem 'sqlite3'

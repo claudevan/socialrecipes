@@ -24,6 +24,8 @@
       <dd><%= @recipe.ingredients %></dd>
       <dt>Passo a Passo</dt>
       <dd><%= @recipe.step_by_step %></dd>
+      <dt>Foto</dt>
+      <dd><%= image_tag @recipe.image.url(:thumb) %></dd>
     </dl>
   </div>
 </div>

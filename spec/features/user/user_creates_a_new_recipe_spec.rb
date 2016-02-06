@@ -14,6 +14,7 @@ feature 'User creates a new recipes' do
     fill_in 'recipe[time]',             with: recipe.time
     fill_in 'recipe[ingredients]',      with: recipe.ingredients
     fill_in 'recipe[step_by_step]',     with: recipe.step_by_step
+    attach_file('recipe[image]', 'spec/images/meal.jpg')
 
     click_on 'Salvar'
 
@@ -26,6 +27,7 @@ feature 'User creates a new recipes' do
     expect(page).to have_content(recipe.time)
     expect(page).to have_content(recipe.ingredients)
     expect(page).to have_content(recipe.step_by_step)
+    expect(page).to have_selector('img')
   end
 
   scenario 'invalid data' do

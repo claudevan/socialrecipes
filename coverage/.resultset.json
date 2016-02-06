@@ -9,6 +9,9 @@
         1,
         1,
         null,
+        1,
+        null,
+        1,
         null
       ],
       "/home/spunk/workspace/socialrecipes/app/controllers/recipes_controller.rb": [
@@ -58,6 +61,6 @@
         0
       ]
     },
-    "timestamp": 1454727858
+    "timestamp": 1454761613
   }
 }
