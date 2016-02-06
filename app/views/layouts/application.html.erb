@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Socialrecipes</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
 
-<%= yield %>
+  <head>
+    <title>Hello Cook</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <%= link_to "Hello Cook", root_path, {class:"navbar-brand"} %>
+          </div>
+          <ul class="nav navbar-nav">
+            <li>
+              <%= link_to "Receita", new_recipe_path %>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-</body>
+      <div class="row">
+        <% if flash[:success] %>
+        <div class="col-md-12 col-sm-12">
+          <div class="alert alert-success alert-dismissible pull-right" role="alert">
+            <button type="button" class="close" data-dismiss="alert">
+              <span aria-hidden="true">x</span>
+            </button>
+            <%= flash[:success] %>
+          </div>
+        </div>
+        <% end %>
+      </div>
+
+      <%= yield %>
+    </div>
+  </body>
 </html>

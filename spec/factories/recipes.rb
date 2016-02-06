@@ -5,6 +5,7 @@ FactoryGirl.define do
     kind_meal "Lunch"
     preference "Oq é isso:"
     serve 2
+    time 45
     difficulty "Easy"
     ingredients "Pasta"
     step_by_step "teste teste teste teste teste"

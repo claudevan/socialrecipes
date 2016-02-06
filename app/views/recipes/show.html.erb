@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-12 col-sm-12">
+    <div class="page-header">
+      <h1><%= @recipe.name %></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 col-sm-12">
+    <dl class="dl-horizontal">
+      <dt>Cozinha</dt>
+      <dd><%= @recipe.cookery %></dd>
+      <dt>Tipo de Comida</dt>
+      <dd><%= @recipe.kind_meal %></dd>
+      <dt>Preferência</dt>
+      <dd><%= @recipe.preference %></dd>
+      <dt>Quantas pessoas serve</dt>
+      <dd><%= @recipe.serve %></dd>
+      <dt>Tempo de Preparo</dt>
+      <dd><%= @recipe.time %></dd>
+      <dt>Nivel de dificuldade</dt>
+      <dd><%= @recipe.difficulty %></dd>
+      <dt>Ingredientes</dt>
+      <dd><%= @recipe.ingredients %></dd>
+      <dt>Passo a Passo</dt>
+      <dd><%= @recipe.step_by_step %></dd>
+    </dl>
+  </div>
+</div>
