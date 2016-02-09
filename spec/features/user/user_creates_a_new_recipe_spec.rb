@@ -27,7 +27,7 @@ feature 'User creates a new recipes' do
     expect(page).to have_content(recipe.time)
     expect(page).to have_content(recipe.ingredients)
     expect(page).to have_content(recipe.step_by_step)
-    expect(page).to have_selector('img')
+    expect(page).to have_xpath("//img[contains(@src,'meal.jpg')]")
   end
 
   scenario 'invalid data' do

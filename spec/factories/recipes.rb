@@ -8,6 +8,6 @@ FactoryGirl.define do
     time 45
     difficulty "Easy"
     ingredients "Pasta"
-    step_by_step "teste teste teste teste teste"
+    step_by_step "Teste teste teste teste teste"
   end
 end
